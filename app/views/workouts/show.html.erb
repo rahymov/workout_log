@@ -1,0 +1,12 @@
+<div class="container">
+	<div class="row">
+		<p><%= @workout.date %></p>
+		<p><%= @workout.workout %></p>
+		<p><%= @workout.mood %></p>
+		<p><%= @workout.length %></p>
+	</div>
+	<%= link_to "Back", root_path, class: "btn btn-default btn-sm" %> 
+	<%= link_to "Edit", edit_workout_path, class: "btn btn-default btn-sm" %>
+	<%= link_to "Delete", workout_path(@workout), method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-danger btn-sm" %>
+
+
