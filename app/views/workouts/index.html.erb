@@ -1,10 +1,13 @@
-<div class="container">
-	<div class="row">
-		<% @workouts.each do |workout| %>
-			<h2><%= link_to workout.date.strftime("%A %B %d"), workout %></h2>
-			<h3><%= workout.workout %></h3>
-		<!-- 	<p><%= workout.mood %></p>
-			<p><%= workout.length %></p> -->
-		<% end %>
-	</div>
-</div>
+<!-- <div class="container">
+	<div class="row"> -->
+		<div id="index_workouts">
+			<% @workouts.each do |workout| %>
+				<h2><%= link_to workout.date.strftime("%A %B %d"), workout %></h2>
+				<h3><span >Workout:</span> <%= workout.workout %></h3>
+			<!-- 	<p><%= workout.mood %></p>
+				<p><%= workout.length %></p> -->
+			<% end %>
+			<br>
+		</div>
+<!-- 	</div>
+</div> -->
